@@ -53,7 +53,9 @@
 				<p>Feel free to reach out if you want to build something together!</p>
 			</Card.Content>
 			<Card.Footer>
-				<Button class="bg-primary text-primary-foreground">About Me</Button>
+				<a href="/about">
+					<Button class="bg-primary text-primary-foreground">About Me</Button>
+				</a>
 			</Card.Footer>
 		</Card.Root>
 	</div>
