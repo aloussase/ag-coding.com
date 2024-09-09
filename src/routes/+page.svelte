@@ -15,6 +15,17 @@
 
 <svelte:head>
 	<title>Home | Alexander Goussas</title>
+	<meta
+		name="description"
+		content="FullStack software development blog. I talk about frontend development with SvelteKit, Vue.js and backend with .NET, Spring and TypeScript. Ocasionally I will talk about functional programming as well."
+	/>
+	<meta property="og:title" content="FullStack Software Development Blog" />
+	<meta property="og:url" content="https://ag-coding.com" />
+	<meta
+		property="og:description"
+		content="Software development blog about frontend (Vue.js, SvelteKit) and backend (.NET, Spring, TypeScript). I sometimes talk about functional programming as well."
+	/>
+	<meta property="og:image" content="" />
 </svelte:head>
 
 <div
