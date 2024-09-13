@@ -11,7 +11,7 @@
 </svelte:head>
 
 <div class="relative min-h-screen w-full overflow-auto">
-	<div class="mb-[80px] p-4 md:mx-auto md:w-4/5">
+	<div class="mb-[350px] p-4 md:mx-auto md:mb-[150px] md:w-4/5">
 		<slot></slot>
 	</div>
 	<AgFooter />

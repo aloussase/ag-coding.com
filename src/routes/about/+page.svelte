@@ -2,25 +2,20 @@
 	import AboutSection from './about-section.svelte';
 	import devfest from '$lib/assets/devfest.jpg';
 	import weavile from '$lib/assets/weavile.png';
-
-	const age = new Date(Date.now()).getFullYear() - new Date(Date.parse('1999-08-20')).getFullYear();
 </script>
 
 <svelte:head>
 	<title>About | Alexander Goussas</title>
 </svelte:head>
 
-<div class="flex flex-col items-center gap-4">
-	<section class="mb-4 w-4/5 text-center">
+<div class="flex flex-col gap-4">
+	<section class="mb-4">
 		<h1 class="mb-4 text-xl">About Me</h1>
 		<p>
-			I am a {age} year old software developer from Ecuador. Currently, I'm doing an internship at a
-			large retail company on my country, and I have a contract with my university for an application
-			we are developing.
-		</p>
-		<p>
-			Professionally, my best language is C#, but personally I love Haskell and would like to
-			someday be able to write it for a job.
+			I'm a software developer from Ecuador. Currently, I'm doing an internship at a large retail
+			company on my country, and I have a contract with my university for an application we are
+			developing. Professionally, my best language is C#, but personally I love Haskell and would
+			like to someday be able to write it for a living.
 		</p>
 	</section>
 	<AboutSection
@@ -64,9 +59,9 @@
 			&nbsp;
 			<p>
 				Playing video games is another one of passions. Well, not really videogames, but
-				specifically Pokemon videogames. I've been following the series since I have memory and have
-				been playing competitively for about a year now. I would absolutely love to be able to
-				attend a championship one day. It's in my bucket list 😉.
+				specifically Pokemon games. I've been following the series since I have memory and have been
+				playing competitively for some time now. I would absolutely love to be able to attend a
+				championship one day. It's in my bucket list 😉.
 			</p>
 		</div>
 		<div class="col-start-1 row-start-1 mt-4 flex flex-col items-center gap-1">
