@@ -6,10 +6,12 @@
 
 <section>
 	<Card.Root>
-		<Card.Header>
-			<Card.Title><i>{title}</i></Card.Title>
+		<Card.Header class="bg-primary text-white">
+			<Card.Title>
+				<span class="text-2xl"># {title}</span>
+			</Card.Title>
 		</Card.Header>
-		<Card.Content class={$$props.class || ''}>
+		<Card.Content class="{$$props.class || ''} p-4">
 			<slot></slot>
 		</Card.Content>
 	</Card.Root>

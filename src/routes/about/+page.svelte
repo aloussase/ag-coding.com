@@ -9,15 +9,6 @@
 </svelte:head>
 
 <div class="flex flex-col gap-4">
-	<section class="mb-4">
-		<h1 class="mb-4 text-xl">About Me</h1>
-		<p>
-			I'm a software developer from Ecuador. Currently, I'm doing an internship at a large retail
-			company on my country, and I have a contract with my university for an application we are
-			developing. Professionally, my best language is C#, but personally I love Haskell and would
-			like to someday be able to write it for a living.
-		</p>
-	</section>
 	<AboutSection
 		title="Programming"
 		class="items-center justify-items-center md:grid md:grid-cols-3"
@@ -50,6 +41,7 @@
 	</AboutSection>
 	<AboutSection title="Hobbies" class="grid-cols-3 items-center justify-items-center md:grid">
 		<div class="col-span-2 col-start-2">
+			<h3 class="text-xl font-bold"># Reading</h3>
 			<p>
 				I love reading. My favourite genre is Fantasy, but I am open to try most things. For a long
 				time my favourite author was Brandon Sanderson, and I still keep works such as Mistborn
@@ -57,11 +49,19 @@
 				as well. If you have any book recommendations, please hit me up!
 			</p>
 			&nbsp;
+			<h3 class="text-xl font-bold"># Gaming</h3>
 			<p>
 				Playing video games is another one of passions. Well, not really videogames, but
 				specifically Pokemon games. I've been following the series since I have memory and have been
 				playing competitively for some time now. I would absolutely love to be able to attend a
 				championship one day. It's in my bucket list 😉.
+			</p>
+			&nbsp;
+			<h3 class="text-xl font-bold"># Cooking</h3>
+			<p>
+				I love cooking as a form of art and deeply appreciate flavors and the technique needed to
+				make them come to life. Admittedly, I've been a little laid back on this aspect of my life,
+				but I am planning on putting more effort into it.
 			</p>
 		</div>
 		<div class="col-start-1 row-start-1 mt-4 flex flex-col items-center gap-1">
