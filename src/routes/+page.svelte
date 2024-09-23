@@ -5,6 +5,7 @@
 	import { Button } from '@/components/ui/button';
 	import * as Card from '@/components/ui/card';
 	import * as Avatar from '$lib/components/ui/avatar';
+	import AgContacts from '@/components/ag-contacts.svelte';
 
 	const headlines = [
 		'I like building stuff',
@@ -35,22 +36,26 @@
 		<Card.Root>
 			<Card.Header>
 				<Card.Title>
-					<span class="text-primary flex items-center gap-2 text-lg">
-						Hi, there! <Hand />
+					<span class="flex items-center gap-2 text-2xl text-primary">
+						# Hi, there! <Hand />
 					</span>
 				</Card.Title>
 				<Card.Description>
 					<Typewriter interval={100} mode="loop">
 						{#each headlines as headline}
-							<span class="font-bold">{headline}</span>
+							<span class="text-lg font-bold">{headline}</span>
 						{/each}
 					</Typewriter>
 				</Card.Description>
 			</Card.Header>
 			<Card.Content class="flex flex-col gap-2">
-				<p>I am a software developer from Ecuador that loves building stuff with friends.</p>
-				<p>Currently in love with .NET <Heart class="inline text-red-500" />.</p>
+				<p>
+					I am a software developer from Ecuador that loves building stuff with friends. Currently
+					in love with .NET <Heart class="inline text-red-500" />.
+				</p>
+				<div class="my-2"></div>
 				<p>Feel free to reach out if you want to build something together!</p>
+				<AgContacts />
 			</Card.Content>
 			<Card.Footer>
 				<a href="/about">

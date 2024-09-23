@@ -15,7 +15,7 @@
 		<Card.Root class="w-fit max-w-[300px]">
 			<img src={project.image} alt={project.name} class="max-h-[150px] w-full object-cover" />
 			<Card.Header>
-				<Card.Title>{project.name}</Card.Title>
+				<Card.Title class="text-xl"># {project.name}</Card.Title>
 				<Card.Description class="flex gap-1">
 					{#each project.labels as label}
 						<Badge>{label}</Badge>
