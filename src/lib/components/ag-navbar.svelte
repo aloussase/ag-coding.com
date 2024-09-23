@@ -1,9 +1,10 @@
 <script lang="ts">
+	import { Code, User, NotebookText } from 'lucide-svelte';
+
 	const links = [
-		{ name: 'Projects', to: '/projects' },
-		{ name: 'About', to: '/about' },
-		{ name: 'Blog', to: '/blog' },
-		{ name: 'Contact', to: '/#contact' }
+		{ name: 'Projects', to: '/projects', icon: Code },
+		{ name: 'About', to: '/about', icon: User },
+		{ name: 'Blog', to: '/blog', icon: NotebookText }
 	];
 </script>
 
@@ -13,7 +14,15 @@
 	<h1 class="text-xl"><a href="/" class="hover:underline">Alexander Goussas</a></h1>
 	<ul class="flex gap-4">
 		{#each links as link}
-			<li><a href={link.to} class="hover:underline">{link.name}</a></li>
+			<li>
+				<a
+					href={link.to}
+					class="flex items-center gap-1 rounded-sm p-1 text-lg hover:bg-white hover:text-primary hover:underline"
+				>
+					<svelte:component this={link.icon} />
+					{link.name}
+				</a>
+			</li>
 		{/each}
 	</ul>
 </nav>
